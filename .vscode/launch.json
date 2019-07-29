@@ -7,10 +7,11 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'rust-STM32F723E-DISCO'",
+            "name": "build 'rust-STM32F723E-DISCO'",
             "cargo": {
                 "args": [
                     "build",
+                    "--target=thumbv7m-none-eabi",
                     "--bin=rust-STM32F723E-DISCO",
                     "--package=rust-STM32F723E-DISCO"
                 ],
