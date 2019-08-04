@@ -7,14 +7,12 @@
         {
             "name": "build & debug",
             "cwd": "${workspaceRoot}",
-            "executable": "target/thumbv7em-none-eabihf/debug/getting-started-stm32f723-disco",
-            "configFiles": [
-                "openocd.cfg",
-            ],
+            "program": "target/thumbv7em-none-eabihf/debug/getting-started-stm32f723-disco",
             "request": "launch",
-            "type": "cortex-debug",
-            "servertype": "openocd",
-            "preLaunchTask": "build",
+            "type": "gdb",
+            // "preLaunchTask": "build",
+            "target": "localhost:3333",
+            "gdbpath": "arm-none-eabi-gdb"
         },
         {
             "name": "debug(example)",

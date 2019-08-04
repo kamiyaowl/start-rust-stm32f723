@@ -127,3 +127,10 @@ to intervene to uphold that code of conduct.
 
 [CoC]: https://www.rust-lang.org/policies/code-of-conduct
 [team]: https://github.com/rust-embedded/wg#the-cortex-m-team
+
+memo
+
+```
+$ openocd -f /Users/user/Documents/getting-started-stm32f723-disco/openocd.cfg
+$ arm-none-eabi-gdb -x openocd.gdb
+```
